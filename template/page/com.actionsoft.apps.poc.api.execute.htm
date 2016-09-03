@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- 
+Description: API 功能测试用例 - 执行日志
+author: ZhangMing
+date: 20140228 
+ -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>API Test</title>
+	<!-- AWS UI -->
+	<link type="text/css" rel="stylesheet" href="../commons/css/awsui.css">
+	<link type="text/css" rel="stylesheet" href="../commons/js/jquery/themes/default/public.css">
+	<link type="text/css" rel="stylesheet" href="../apps/com.actionsoft.apps.poc.api/css/execute.css"/>
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="../commons/js/jquery/scripts/jquery.js"></script>
+	<!-- Aws UI -->
+	<script type="text/javascript" src="../commons/js/awsui.js"></script>
+	
+	<!--Business js-->
+	<script type="text/javascript" src="../apps/com.actionsoft.apps.poc.api/js/api.execute.js"></script>
+	
+	<style>
+		.list-item{
+			position:relative;
+			white-space: nowrap;
+		}
+		.icon{
+			position:relative;
+			display:inline-block;
+			height:24px;
+			width:24px;
+		}
+		.title{
+			position:relative;
+			display:inline-block;
+			overflow:visible;
+			vertical-align: top;
+			white-space: nowrap;
+		}
+	</style> 
+	
+	<script type="text/javascript">
+		var API测试用例列表 = "<I18N#API测试用例列表>";
+		
+		var sid = "<#sid>";
+	
+		$(function(){
+		    $(window).layout({
+		        left:{
+		            target:"#simple-left",
+		            title:API测试用例列表
+		        },
+		        right:{
+		            target:"#simple-right"
+		        },
+		        separater:{
+		            target :"#simple-layout-separater"
+		        }
+		    });
+		});
+	</script>
+</head>
+<body>
+	<div id="simple-left" class="layout awsui-layout">
+		<div id="testcase_list" class="awsui-layout-left" style="height:420px; overflow:auto;"></div>
+	</div>
+	<div id="simple-layout-separater"></div>
+	<div id="simple-right" style="overflow:auto; background:#000; color:#fff;">
+		<pre id="execute_log"></pre>
+	</div>
+	<input type="hidden" id="sid" value="<#sid>" />
+</body>
+</html>

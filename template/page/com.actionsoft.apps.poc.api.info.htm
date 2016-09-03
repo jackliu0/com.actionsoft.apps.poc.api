@@ -1,0 +1,105 @@
+<!doctype html>
+<!-- 
+Description: API 测试用例详细信息
+author: ZhangMing
+date: 20140225 
+ -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>API Test</title>
+    <script type="text/javascript" src="../apps/com.actionsoft.apps.poc.api/js/shCore.js"></script>
+    <script type="text/javascript" src="../apps/com.actionsoft.apps.poc.api/js/shBrushJScript.js"></script>
+    
+    <!-- AWS UI -->
+    <link type="text/css" rel="stylesheet" href="../commons/css/awsui.css">
+    <link type="text/css" rel="stylesheet" href="../commons/js/jquery/themes/default/public.css">
+    <link type="text/css" rel="stylesheet" href="../apps/com.actionsoft.apps.poc.api/css/shCoreDefault.css"/>
+    <link type="text/css" rel="stylesheet" href="../apps/com.actionsoft.apps.poc.api/css/execute.css"/>
+    <link type="text/css" rel="stylesheet" href="../apps/com.actionsoft.apps.poc.api/css/api.layout.css"/>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../commons/js/jquery/scripts/jquery.js"></script>
+    <!--语法高亮-->
+    <script type="text/javascript" src="../commons/plug-in/CodeMirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="../commons/plug-in/CodeMirror/mode/xml/xml.js"></script>
+    <link type="text/css" rel="stylesheet" href="../commons/plug-in/CodeMirror/lib/codemirror.css"/>
+    <link type="text/css" rel="stylesheet" href="../commons/plug-in/CodeMirror/theme/rubyblue.css"/>
+    
+    <!-- Aws UI -->
+    <script type="text/javascript" src="../commons/js/awsui.js"></script>
+    <!--Business js-->
+    <script type="text/javascript" src="../apps/com.actionsoft.apps.poc.api/js/api.info.js"></script>
+    <script type="text/javascript" src="../apps/com.actionsoft.apps.poc.api/js/api.info.layout.js"></script>
+    
+    <style>
+	.syntaxhighlighter {
+		overflow: visible;
+	}
+	.CodeMirror {
+		height:100%;
+	}
+	.CodeMirror-scrollbar {
+		z-index: 0;
+	}
+    </style>
+    
+    <script>
+    var 测试代码 = "<I18N#测试代码>";
+	var 流程图 = "<I18N#流程图>";
+	var BPMN2文件 = "<I18N#BPMN2文件>";
+    
+    $(document).ready(function(){
+        $(".awsui-tabs-bottom").find("a[tit]").on("click", function(){
+            $(this).siblings().removeClass("current");
+            $(this).addClass("current");
+            $("#content").find("div[tit]").hide();
+            $("#content").find("div[tit='"+$(this).attr("tit")+"']").show();
+            getBPMNOrDiagram($(this).attr("tit"));
+        });
+        
+        initLayout();
+        
+        $("[name=execute]").bind("click", start);
+        
+        SyntaxHighlighter.all();
+    });
+    </script>
+
+</head>
+<body>
+    <div id="top">
+        <div id="content" style="overflow:auto;">
+            <div tit="source" class="code tab-content" style="height:100%;"><pre class="brush:js"><#source></pre></div>
+            <div tit="bpmn_img" class="tab-content" style="height:100%; text-align:center; display:none;"></div>
+            <div tit="bpmn_file" class="tab-content" id="bpmn_file" style="height:100%; display:none;"></div>
+        </div>
+        <div style="margin-left:0px;" class="awsui-tabs-bottom">
+        	<a tit="source" class="tab-items current" style="margin-left:5px;"><I18N#测试代码></a>
+            <a tit="bpmn_img" class="tab-items" style="<#showFile>"><I18N#流程图></a>
+            <a tit="bpmn_file" class="tab-items" style="<#showFile>"><I18N#BPMN2文件></a>
+        </div>
+    </div>
+    <div id="separater" class="layout-separater" style="height:6px; width:100%;">
+    	<div id="toolbar_1" style="width:100%; height:30px; display:none;">
+	        <div name="execute" class="start-icon" style="float:left; margin-left:5px; margin-top:3px;"></div>
+	        <div style="float:right; margin-right:5px; margin-top:3px;">
+	        	<span class="awsui-layout-icon arrow-up"></span>
+	        </div>
+	    </div>
+    </div>
+    <div id="bottom" style="position:relative; top:6px;">
+	    <div id="toolbar_2" style="width:100%; height:30px;">
+	        <div name="execute" class="start-icon" style="float:left; margin-left:5px; margin-top:3px;" awsui-qtip="执行用例"></div>
+	        <div style="float:right; margin-right:5px; margin-top:3px;">
+	        	<span class="awsui-layout-icon arrow-down"></span>
+	        </div>
+	    </div>
+	    <div id="execute_div" style="overflow:auto; background:#000; color:#fff; height:200px;">
+	        <pre id="execute_log" style="margin:5px;"></pre>
+	    </div>
+    </div>
+    <input id="caseName" type="hidden" value="<#name>" />
+    <input id="caseId" type="hidden" value="<#id>" />
+    <input id="sid" type="hidden" value="<#sid>" />
+</body>
+</html>

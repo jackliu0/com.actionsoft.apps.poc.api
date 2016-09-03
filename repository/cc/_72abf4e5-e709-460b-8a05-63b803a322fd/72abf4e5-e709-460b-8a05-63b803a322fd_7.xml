@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccModel>
+    <id>72abf4e5-e709-460b-8a05-63b803a322fd</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-19 15:48:38</createTime>
+    <updateTime>2015-08-19 16:14:31</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuHkVQGP5ix27TmY+7DD4zF0yxRRtb+WQDWHCYHz6i/rNb8I1ilP5bZGj64avw0GHO</signature>
+    <name>Shell Connector Demo</name>
+    <type>nativecall</type>
+    <updateUser>admin</updateUser>
+    <group></group>
+    <log>false</log>
+    <properties>{"command":"ping","args":"localhost -c 6","workingdDirectory":"","separator":"space","group":"","diyData":[]}</properties>
+    <desc></desc>
+</ccModel>

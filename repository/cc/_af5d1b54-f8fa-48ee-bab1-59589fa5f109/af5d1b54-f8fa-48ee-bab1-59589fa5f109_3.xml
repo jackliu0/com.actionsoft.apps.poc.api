@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccModel>
+    <id>af5d1b54-f8fa-48ee-bab1-59589fa5f109</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-18 23:43:10</createTime>
+    <updateTime>2015-08-18 23:44:19</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuvRY7Q7SW/gKR5HtnIqzB7QvsePri9I6hFn6tRJH45sKoRFYtPMqgC9tqWxr3c1go</signature>
+    <name>SOAP Connector Demo</name>
+    <type>ws</type>
+    <updateUser></updateUser>
+    <group></group>
+    <log>true</log>
+    <properties>{"svType":"wsdl","wsdlUrl":"http://localhost:8088/portal/r/s?service=demoApi&amp;wsdl=true","group":"","serviceName":"{http://api.local.api.poc.apps.actionsoft.com/}SayHello","portName":"SayHelloPort","operate":"{\"output\":\"sayResponse\",\"input\":\"say\",\"opName\":\"say\"}","icon":"","policy":"","isMtom":true,"soapActionURI":"","input":"&lt;soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://api.local.api.poc.apps.actionsoft.com/\"&gt;\r\n   &lt;soapenv:Header/&gt;\r\n   &lt;soapenv:Body&gt;\r\n      &lt;api:say&gt;\r\n         &lt;str1&gt;${param1}&lt;\/str1&gt;\r\n      &lt;\/api:say&gt;\r\n   &lt;\/soapenv:Body&gt;\r\n&lt;\/soapenv:Envelope&gt;","address":"http://localhost:8088/portal/r/s?service=demoApi"}</properties>
+    <desc></desc>
+</ccModel>

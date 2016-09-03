@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- 
+Description: API 功能测试用例
+author: ZhangMing
+date: 20140224 
+ -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>API Test</title>
+	<!-- AWS UI -->
+	<link type="text/css" rel="stylesheet" href="../commons/css/awsui.css">
+	<link type="text/css" rel="stylesheet" href="../commons/js/jquery/themes/default/public.css">
+	<link type="text/css" rel="stylesheet" href="../apps/com.actionsoft.apps.poc.api/css/execute.css"/>
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="../commons/js/jquery/scripts/jquery.js"></script>
+	<!-- Aws UI -->
+	<script type="text/javascript" src="../commons/js/awsui.js"></script>
+	<!--Business js-->
+	<script type="text/javascript" src="../apps/com.actionsoft.apps.poc.api/js/api.home.js"></script>
+	
+	<style>
+		.left-toolbar li{
+			height:45px;
+			position: relative;
+			font-size: 14px;
+			border-bottom: 1px solid #fafafa;
+			border-top: 1px solid #fafafa;
+		}
+		.left-toolbar li div{
+			height:24px;
+			width:24px;
+			position:relative;
+			top: 10.5px;
+			left: 8px;
+			text-align: center;
+		}
+	</style>  
+	
+	<script type="text/javascript">
+		var 请至少选择一个测试用例 = "<I18N#请至少选择一个>" + "<I18N#测试用例>";
+		var SDK_API_接口验证 = "<I18N#SDK API 接口验证>";
+		
+		var treeData = <#treeData>;
+		var sid = "<#sid>";
+	
+		$(function(){
+		    $(window).layout({
+			    bottom:{
+					target:"#bottom",
+					height:"30px"
+				},
+		        left:{
+		            target:"#simple-left",
+		            title:SDK_API_接口验证
+		        },
+		        right:{
+		            target:"#simple-right"
+		        },
+		        separater:{
+		            target :"#simple-layout-separater"
+		        }
+		    });
+		    
+		    $(window).trigger('resize');
+		    $("#execute").bind("click", openDialog);
+		});
+		
+		$(window).resize(function(){
+			//设置tree外层div高度，以设置滚动条
+			$("#apiTree").parent().height($(window).height() - 65);
+		})
+	</script>
+</head>
+<body>
+	<div id="bottom">
+		<div style="text-align:center;font-size:13px;">AWS Process Engine Version : <#version></div>
+	</div>
+	<div id="simple-left" class="layout awsui-layout" style=" height:100%; width:280px; position: relative; display: block;">
+		<div class="awsui-layout-left left-toolbar" style="height:100%; width:40px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(204, 204, 204);">
+			<ul>
+                <li>
+                    <div id="execute_all" class="startall-icon" onclick="openDialog()" awsui-qtip="执行多个用例"></div>
+                </li>
+                <li><div><span id="success_num" style="color:green; cursor:default; vertical-align: middle;" awsui-qtip="成功个数">0</span></div></li>
+                <li><div><span id="fail_num" style="color:red; cursor:default; vertical-align: middle;" awsui-qtip="失败个数">0</span></div></li>
+            </ul>
+		</div>
+		<div class="awsui-layout-right" style="width: 235px; left: 41px; overflow:auto; top:33px;">
+			<ul id="apiTree" style="overflow:visible;"></ul>
+		</div>
+	</div>
+	<div id="simple-layout-separater"></div>
+	<div id="simple-right" style=" height:100%;">
+		<div id="awsui-tabs" class="awsui-tabs"></div>
+		<div id="awsui-tabs-content" class="awsui-tabs-panel"></div>
+	</div>
+	
+	<ul id="contextMenu" class="awsui-menu"></ul>
+	
+	<!--运行Dialog-->
+	<div title="ExecuteLog" style="width:830px;display:none;" id="execute_dialog">
+		<div id="content" style="height:450px; width:828px; overflow:auto; padding:0px; margin-top:0px;" class="dlg-content"></div>
+	</div>
+	
+	<input type="hidden" id="sid" value="<#sid>" />
+</body>
+</html>

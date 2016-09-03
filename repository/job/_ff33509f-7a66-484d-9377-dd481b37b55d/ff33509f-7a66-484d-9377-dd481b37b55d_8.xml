@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<awsScheduleModel>
+    <id>ff33509f-7a66-484d-9377-dd481b37b55d</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-18 23:46:40</createTime>
+    <updateTime>2015-08-19 00:07:33</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzus6iFmV8pVDKfmHSfbRJfcubABbU3do/W/iZ9j9n3CqYKzwtlazLNocI6ukk8E/pJ</signature>
+    <name>Call SOAP Demo</name>
+    <group>webservice</group>
+    <desc>这是PoC App的SOAP定时Job演示。当执行时，向AWS PaaS控制台输出给定的参数信息</desc>
+    <disabled>false</disabled>
+    <system>false</system>
+    <classz></classz>
+    <createDate>2015-08-18T23:46:40.597+08:00</createDate>
+    <triggerRule>6::0</triggerRule>
+    <userParam>{"id":"af5d1b54-f8fa-48ee-bab1-59589fa5f109","startCondition":"","reqArgs":"{\"param1\":\"来自SOAP Job的调度请求 - @date\"}"}</userParam>
+    <lastToken></lastToken>
+    <concurrent>false</concurrent>
+    <categoryName>未分类</categoryName>
+    <stateful>false</stateful>
+</awsScheduleModel>

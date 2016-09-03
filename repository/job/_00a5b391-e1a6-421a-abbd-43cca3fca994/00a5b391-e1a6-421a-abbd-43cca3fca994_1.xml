@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<awsScheduleModel>
+    <id>00a5b391-e1a6-421a-abbd-43cca3fca994</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-19 00:07:19</createTime>
+    <updateTime>2015-08-19 00:07:19</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuMIrG37bG49k15FysiN4fCwFqudfQe4kRlZtnzMyl4WIeWv9SFLvNaQU8n0ZBukr4</signature>
+    <name>Call SQL Demo</name>
+    <group>SQL</group>
+    <desc></desc>
+    <disabled>false</disabled>
+    <system>false</system>
+    <classz></classz>
+    <createDate>2015-08-19T00:07:19.415+08:00</createDate>
+    <triggerRule>6::0</triggerRule>
+    <userParam>{"ccjdbc":"_local","isTransaction":false,"sqlExc":[{"sql":"SELECT COUNT(*) AS C from ORGTEAM"}]}</userParam>
+    <lastToken></lastToken>
+    <concurrent>false</concurrent>
+    <categoryName>未分类</categoryName>
+    <stateful>false</stateful>
+</awsScheduleModel>

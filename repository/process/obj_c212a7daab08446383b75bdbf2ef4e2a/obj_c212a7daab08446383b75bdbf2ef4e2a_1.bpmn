@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" aws:signature="DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzu/LtkTwk5zJFS1XHzFQhMfrfOYaTJNz/GX1Mq5HXjCJH0LXtboepQ+bSAqZ55lo83" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:aws="http://www.actionsoft.com.cn/bpmn" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <process id="obj_c212a7daab08446383b75bdbf2ef4e2a" name="Event-BasedGatewayProcess1-ThrowSignal" isClosed="false" processType="None" isExecutable="true">
+    <documentation/>
+    <extensionElements>
+      <aws:extendProcess accessSecurityType="0" archivesId="0" cancelProcessExclusiveActivities="" defaultInstanceTitle="" extendProperty="" processLevelType="0" shortMessageNotifyTemplate="" timeDuration="0" timeDurationText="" trackDiagramType="0" wariningTimeDuration="0" wariningTimeDurationText="" isAutoArchives="false" isCancelProcess="true" isCancelTask="false" isDataShare="false" isDraftRemove="true" isMobileStart="false" isQuickStart="false" isSecurityLayer="false" isTrackForm="false" isWorklistPopMini="true" versionId="obj_c212a7daab08446383b75bdbf2ef4e2a" processGroupId="obj_905f5893f7704122ad425673d035f490" processGroupName="Event-BasedGateway" categoryName="GatewayProcess" engineType="0" processVer="1" versionStatus="0" processAdministrator="admin" createUser="admin" createTime="2014-09-26 21:23:20" updateUser="" updateTime="null" historyMaxVersion="0" releaseUser="" releaseTime="" messageDigest=""/>
+    </extensionElements>
+    <sequenceFlow id="obj_c651ace640b0000195d6a6e71f8449f0" sourceRef="obj_c651ace5eef00001b082180a1420157a" targetRef="obj_c651ace8aa60000150aa11fcdde612c5">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c651ace8f760000132f2e1c913c04920" sourceRef="obj_c651ace8aa60000150aa11fcdde612c5" targetRef="obj_c651ace99f100001a618e8a0e140114d">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <startEvent id="obj_c651ace5eef00001b082180a1420157a" name="开始事件"/>
+    <endEvent id="obj_c651ace99f100001a618e8a0e140114d" name="结束事件">
+      <extensionElements>
+        <aws:extendEndEvent isNotifyAll="false" isNotifyInstanceOwner="true" notifyUsers=""/>
+      </extensionElements>
+    </endEvent>
+    <intermediateThrowEvent id="obj_c651ace8aa60000150aa11fcdde612c5" name="抛出信号事件"/>
+  </process>
+  <bpmndi:BPMNDiagram id="bpmnDiagramModel_1" name="bpmnDiagramModel_1" documentation="backgroundColor=255,255,255;gridSize=15;width=1600;height=2500;showGrid=true;padding=60">
+    <bpmndi:BPMNPlane id="AWS_obj_c212a7daab08446383b75bdbf2ef4e2a" bpmnElement="obj_c212a7daab08446383b75bdbf2ef4e2a">
+      <bpmndi:BPMNShape id="AWS_obj_c651ace5eef00001b082180a1420157a" bpmnElement="obj_c651ace5eef00001b082180a1420157a" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;0,255,0&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;0,180,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="startEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_c212a7daab08446383b75bdbf2ef4e2a">
+            <aws:elementNodeType>
+              <aws:nodeType>startEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:137,&quot;y&quot;:139,&quot;zindex&quot;:1}" orderIndex="0" defaultLine="" bpmnName="startEvent" title="开始事件" text="开始事件" name="startEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"0,100,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c651ace5ef000001bf5f16ab2995ee00","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c651ace5ef000001c22c10c01824b340","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c651ace5ef000001899219201403d5b0","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="137.0" y="139.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="137.0" y="139.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c651ace640b0000195d6a6e71f8449f0" bpmnElement="obj_c651ace640b0000195d6a6e71f8449f0">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c651ace5eef00001b082180a1420157a&quot;,&quot;x&quot;:177,&quot;y&quot;:159}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c651ace8aa60000150aa11fcdde612c5&quot;,&quot;x&quot;:244,&quot;y&quot;:159}" linkerType="broken" points="[{&quot;x&quot;:210.5,&quot;y&quot;:159},{&quot;x&quot;:210.5,&quot;y&quot;:159}]" parent="" childrenElement="[]" parentId="obj_c212a7daab08446383b75bdbf2ef4e2a">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:2}" orderIndex="1" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="177.0" y="159.0"/>
+        <di:waypoint x="244.0" y="159.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c651ace8aa60000150aa11fcdde612c5" bpmnElement="obj_c651ace8aa60000150aa11fcdde612c5" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;183,253,77&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;201,253,123&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="intermediateEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w-3&quot;,&quot;x1&quot;:&quot;3&quot;,&quot;x2&quot;:&quot;w-3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;-h/6+4&quot;,&quot;y2&quot;:&quot;-h/6+4&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;3&quot;,&quot;x1&quot;:&quot;w-3&quot;,&quot;x2&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h+h/6-4&quot;,&quot;y2&quot;:&quot;h+h/6-4&quot;}],&quot;fillStyle&quot;:{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;183,253,77&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;201,253,123&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;0,100,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5-h*0.32&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.28&quot;,&quot;y&quot;:&quot;h*0.5+h*0.15&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5-w*0.28&quot;,&quot;y&quot;:&quot;h*0.5+h*0.15&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5-h*0.32&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;color&quot;:&quot;50,50,50&quot;,&quot;type&quot;:&quot;solid&quot;},&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:0}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;type&quot;:&quot;none&quot;},&quot;lineStyle&quot;:{&quot;lineWidth&quot;:0}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_c212a7daab08446383b75bdbf2ef4e2a">
+            <aws:elementNodeType>
+              <aws:nodeType>signalIntermediateThrowingEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:244,&quot;y&quot;:139,&quot;zindex&quot;:3}" orderIndex="0" defaultLine="" bpmnName="signalIntermediateThrowingEvent" title="抛出信号事件" text="抛出信号事件" name="signalIntermediateThrowingEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"0,100,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c651ace8aa8000011d1799331e60f9c0","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c651ace8aa800001bd5f5bc049c0172d","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c651ace8aa80000122fdea909b8c115d","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="244.0" y="139.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="244.0" y="139.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c651ace8f760000132f2e1c913c04920" bpmnElement="obj_c651ace8f760000132f2e1c913c04920">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c651ace8aa60000150aa11fcdde612c5&quot;,&quot;x&quot;:284,&quot;y&quot;:159}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c651ace99f100001a618e8a0e140114d&quot;,&quot;x&quot;:367,&quot;y&quot;:159}" linkerType="broken" points="[{&quot;x&quot;:325.5,&quot;y&quot;:159},{&quot;x&quot;:325.5,&quot;y&quot;:159}]" parent="" childrenElement="[]" parentId="obj_c212a7daab08446383b75bdbf2ef4e2a">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:4}" orderIndex="2" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="284.0" y="159.0"/>
+        <di:waypoint x="367.0" y="159.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c651ace99f100001a618e8a0e140114d" bpmnElement="obj_c651ace99f100001a618e8a0e140114d" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;255,0,0&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;160,0,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="endEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:&quot;lineWidth + 2&quot;}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_c212a7daab08446383b75bdbf2ef4e2a">
+            <aws:elementNodeType>
+              <aws:nodeType>endEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:367,&quot;y&quot;:139,&quot;zindex&quot;:5}" orderIndex="0" defaultLine="" bpmnName="endEvent" title="结束事件" text="结束事件" name="endEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"100,0,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c651ace99f100001ed731ba0d6979cc0","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c651ace99f100001813862f017a01915","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c651ace99f2000015aad175710f09320","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="367.0" y="139.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="367.0" y="139.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

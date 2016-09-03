@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccModel>
+    <id>e91d8db7-b9c7-4a7b-94d7-6eec0833ae19</id>
+    <createUser>admin</createUser>
+    <createTime>2014-09-21 18:40:43</createTime>
+    <updateTime>2014-09-21 18:40:47</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzurY8eHroPaUrFo6p9Q0HtHPzUwPUGFbB+UjEvuHH1n0cgVrm/tNrQCg82yOxD5m46</signature>
+    <name>DeleteVars</name>
+    <type>servicetask</type>
+    <updateUser></updateUser>
+    <group>未分类</group>
+    <log>true</log>
+    <properties>{"className":"com.actionsoft.apps.poc.api.local.process.var.DeleteVars","diyData":[],"group":"","icon":"","name":"DeleteVars","svtype":"delegateService"}</properties>
+    <desc></desc>
+</ccModel>

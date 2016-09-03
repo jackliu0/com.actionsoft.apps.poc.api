@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccModel>
+    <id>815a1542-b687-4e6d-82cc-4da76d306d2c</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-18 23:28:05</createTime>
+    <updateTime>2015-08-18 23:28:05</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuElWA3uVgvtkK72BqmUK9/aVjY2EYSXA23vJG+lmqpEUCr8xrn4dGR3BvMne/D+Om</signature>
+    <name>HTTP Demo</name>
+    <type>http</type>
+    <updateUser></updateUser>
+    <group></group>
+    <log>false</log>
+    <properties>{"user":"","password":"","httpUrl":"http://localhost:8088/portal/r/w","method":"POST","encoding":"UTF-8","group":"","diyData":[],"params":[{"key":"cmd","value":"com.actionsoft.apps.poc.api_no_session_test"}],"idcheck":false}</properties>
+    <desc></desc>
+</ccModel>

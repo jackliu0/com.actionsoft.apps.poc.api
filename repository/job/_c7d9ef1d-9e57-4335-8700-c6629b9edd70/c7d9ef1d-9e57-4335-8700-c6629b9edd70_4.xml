@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<awsScheduleModel>
+    <id>c7d9ef1d-9e57-4335-8700-c6629b9edd70</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-19 16:08:23</createTime>
+    <updateTime>2015-08-19 16:15:43</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuiq6g+jEnN0xWARWlSWzPMtU12RIVshwXNxzY02ozCWzdFoQ2d0RnhxdLsf3l/a/2</signature>
+    <name>Call Shell Demo</name>
+    <group>NativeCall</group>
+    <desc>这是PoC App的NativeCall定时Job演示。当执行时调用一次外部Shell脚本</desc>
+    <disabled>false</disabled>
+    <system>false</system>
+    <classz>72abf4e5-e709-460b-8a05-63b803a322fd</classz>
+    <createDate>2015-08-19T16:08:23.404+08:00</createDate>
+    <triggerRule>6::0</triggerRule>
+    <userParam></userParam>
+    <lastToken></lastToken>
+    <concurrent>false</concurrent>
+    <categoryName>未分类</categoryName>
+    <stateful>false</stateful>
+</awsScheduleModel>

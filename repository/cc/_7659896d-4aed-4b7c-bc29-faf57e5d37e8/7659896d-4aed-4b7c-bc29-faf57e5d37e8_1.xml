@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccModel>
+    <id>7659896d-4aed-4b7c-bc29-faf57e5d37e8</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-15 18:40:36</createTime>
+    <updateTime>2015-08-15 18:40:36</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzu9HSw1qda2ZYLU40AdV5zXUw3K2gjjUSNszhcVtOKaBo+ogdBqk5oxynuz1C0ZSCw</signature>
+    <name>Demo API</name>
+    <type>wsprovider</type>
+    <updateUser></updateUser>
+    <group></group>
+    <log>true</log>
+    <properties>{"name":"Demo API","serviceId":"DemoApi","serviceInterType":"java","policy":"c8c2d1dc-8097-465a-a46c-5d4b417c5259","desc":"这是一个SOAP API的封装演示","group":"","sei":"","serviceImpl":"com.actionsoft.apps.poc.api.local.api.SayHello","audit":true,"serviceImplType":"j","serviceTranType":"http"}</properties>
+    <desc>这是一个SOAP API的封装演示</desc>
+</ccModel>

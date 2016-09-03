@@ -1,0 +1,1 @@
+这是@trim(  AWS BPM PaaS 6 )测试脚本

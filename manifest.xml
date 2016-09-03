@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<app xmlns="http://www.actionsoft.com.cn/app">  
+  <name>AWS SDK API接口验证</name>  
+  <version>1.0</version>  
+  <buildNo>6</buildNo>  
+  <developer id="776cca9a287c8b4d63b9cad216aa3859" tablePrefix="ACT" url="http://www.actionsoft.com.cn">北京炎黄盈动科技发展有限责任公司</developer>  
+  <productId/>  
+  <categoryVisible>true</categoryVisible>  
+  <releaseDate/>  
+  <description><![CDATA[AWS SDK API接口功能验证，适用于AWS开发者对API概念的验证和学习]]></description>  
+  <details><![CDATA[该应用提供了调用标准AWS SDK API的演示代码，同时本应用提供了一个前端功能(首页>POC验证>SDK API接口验证)，让开发者更加直观生动的学习和掌握这些API用法。 
+
+<b>应用亮点</b>
+　　-覆盖AWS SDK的主要API
+　　-对API验证场景的测试用例设计
+　　-基于JUnit的Sample Code
+　　-应用安装包src目录提供了相关源码
+
+<b>** 特别说明</b>
+　　-本应用在AWS生产环境(PRD)中被禁用
+  ]]></details>  
+  <installDate/>  
+  <upgradeDate/>  
+  <installListener/>  
+  <pluginListener>com.actionsoft.apps.poc.api.Plugins</pluginListener>  
+  <startListener>com.actionsoft.apps.poc.api.StartEvent</startListener>  
+  <stopListener>com.actionsoft.apps.poc.api.StopEvent</stopListener>  
+  <upgradeListener/>  
+  <uninstallListener/>  
+  <reloadable>true</reloadable>  
+  <requires> 
+    <require appId="com.actionsoft.apps.poc.wcp" notActiveHandler="warning"/>  
+    <require appId="com.actionsoft.apps.fullsearch" notActiveHandler="warning"/>  
+    <require appId="com.actionsoft.apps.notification" notActiveHandler="none"/>  
+    <require appId="com.actionsoft.apps.entaddress" notActiveHandler="none"/>  
+    <require appId="com.actionsoft.apps.workbench" notActiveHandler="none"/> 
+  </requires>  
+  <properties> 
+    <property action="disabled" group="测试" name="p2" title="p2" type="input" isSystem="false" desc="配合AppPropertyAPITest测试用例">1472879197003</property>  
+    <property action="edit" group="系统" name="ASLP-KEY" title="ASLP-KEY Config" type="input" isSystem="false" desc="HTTP调用ASLP服务的key参数和ip规则，ip可以是一个固定地址或前缀">{"ip":"127.0.0.1","key":"2014"}</property>  
+    <property action="disabled" group="测试" name="p1" title="p1" type="input" isSystem="false" desc="配合AppPropertyAPITest测试用例">1472879196980</property> 
+  </properties>  
+  <depend versions="6.1">_bpm.platform</depend>  
+  <deployment> 
+    <system id="obj_00093403df6a17ed729913d64f48f930" icon16="../commons/img/home_16.png" icon64="../commons/img/home_64.png" icon96="../commons/img/home_96.png" notifier="" name="%u9996%u9875" target="mainFrame" url="/" deployUrlType="2" source="1"> 
+      <directory id="obj_98bd9e5d96d643fd8b137e87b1c3bc02" icon16="../commons/img/home_16.png" icon64="../commons/img/home_64.png" icon96="../commons/img/home_96.png" notifier="" name="POC%u9A8C%u8BC1" target="mainFrame" url="/" deployUrlType="2" source="0"> 
+        <function id="obj_3aae41f615674ceab3b34f9812166d24" icon16="../apps/com.actionsoft.apps.poc.api/img/icon16.png" icon64="../apps/com.actionsoft.apps.poc.api/img/icon64.png" icon96="../apps/com.actionsoft.apps.poc.api/img/icon96.png" notifier="" name="SDK%20API%u63A5%u53E3%u9A8C%u8BC1" target="mainFrame" url="./w?sid=@sid&amp;cmd=com.actionsoft.apps.poc.api_Home" deployUrlType="2" source="0"/> 
+      </directory> 
+    </system> 
+  </deployment> 
+</app>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<awsScheduleModel>
+    <id>f7abaad9-80cd-4cf9-9024-95cf7eeb8ec1</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-18 20:14:11</createTime>
+    <updateTime>2015-08-18 22:53:57</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuPMpwSXqRyeyA3vFaE7XC77t5cmeCEdnDZO2qBTWxPgAXz+/Y//hhZdp55NtZnd+E</signature>
+    <name>Long Time Demo Job</name>
+    <group>DEFAULT</group>
+    <desc>这是PoC App的互斥执行演示Job，该Job将模拟执行30秒。在执行间隔30秒内重复调度时，不会并发执行</desc>
+    <disabled>false</disabled>
+    <system>false</system>
+    <classz>com.actionsoft.apps.poc.api.local.job.LongTimeJob</classz>
+    <createDate>2015-08-18T20:14:11.411+08:00</createDate>
+    <triggerRule>6:10:-1</triggerRule>
+    <userParam></userParam>
+    <lastToken></lastToken>
+    <concurrent>false</concurrent>
+    <categoryName>未分类</categoryName>
+    <stateful>false</stateful>
+</awsScheduleModel>

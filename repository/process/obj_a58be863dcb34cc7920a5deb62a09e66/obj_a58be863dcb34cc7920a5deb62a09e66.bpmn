@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" typeLanguage="http://www.w3.org/2001/XMLSchema" aws:signature="DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuRSba9u5QADVZAnKh0SDX1Lz5ELghaKRcMmMOXPHQpo05IZMYdDZEHtXC6LXzdNPU" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:aws="http://www.actionsoft.com.cn/bpmn" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <!--http://www.omg.org/spec/BPMN/20100524/MODEL-->
+  <process id="obj_a58be863dcb34cc7920a5deb62a09e66" name="Event-BasedGatewayProcess2" isClosed="false" processType="None" isExecutable="true">
+    <documentation/>
+    <extensionElements>
+      <aws:extendProcess accessSecurityType="0" archivesId="0" cancelProcessExclusiveActivities="" defaultInstanceTitle="" extendProperty="" processLevelType="0" shortMessageNotifyTemplate="" timeDuration="0" timeDurationText="" trackDiagramType="0" wariningTimeDuration="0" wariningTimeDurationText="" isAutoArchives="false" isCancelProcess="true" isCancelTask="false" isDataShare="false" isDraftRemove="true" isMobileStart="false" isQuickStart="false" isSecurityLayer="false" isTrackForm="false" isWorklistPopMini="true" versionId="obj_a58be863dcb34cc7920a5deb62a09e66" processGroupId="obj_905f5893f7704122ad425673d035f490" processGroupName="Event-BasedGateway" categoryName="GatewayProcess" engineType="0" processVer="1" versionStatus="0" processAdministrator="admin" createUser="admin" createTime="2014-09-22 21:03:54" updateUser="admin" updateTime="2014-09-24 19:49:18" historyMaxVersion="3" releaseUser="" releaseTime="" messageDigest=""/>
+    </extensionElements>
+    <sequenceFlow id="obj_c6506225dec000012a551a001cbcf250" sourceRef="obj_c650622578000001622818e01f61d790" targetRef="obj_c650622709100001872c1b6092abf560">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c6506227b35000013faa173141201ecc" sourceRef="obj_c650622709100001872c1b6092abf560" targetRef="obj_c6506228fc100001272ac0a061301b6a">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c650622b2d2000017e671c901f601980" sourceRef="obj_c6506228fc100001272ac0a061301b6a" targetRef="obj_c650622b8b000001178d16e9fa709240">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c650622cadf0000127da182016b01d7e" sourceRef="obj_c650622709100001872c1b6092abf560" targetRef="obj_c650622d6450000151a21ac099a0c170">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c650622ee0100001632ce24012c01a26" sourceRef="obj_c650622d6450000151a21ac099a0c170" targetRef="obj_c650622f7bc00001716812a0c7ec1683">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c65062307ef00001916541e012a05460" sourceRef="obj_c650622709100001872c1b6092abf560" targetRef="obj_c65062312b1000017cba148812372870">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="obj_c65062324d000001146917906b001196" sourceRef="obj_c65062312b1000017cba148812372870" targetRef="obj_c6506232bd1000013720ab001eb11790">
+      <extensionElements>
+        <aws:extendSequenceFlow orderIndex="0" compensateSQL=""/>
+      </extensionElements>
+    </sequenceFlow>
+    <startEvent id="obj_c650622578000001622818e01f61d790" name="开始事件"/>
+    <endEvent id="obj_c650622b8b000001178d16e9fa709240" name="结束1">
+      <extensionElements>
+        <aws:extendEndEvent isNotifyAll="false" isNotifyInstanceOwner="true" notifyUsers=""/>
+      </extensionElements>
+    </endEvent>
+    <endEvent id="obj_c650622f7bc00001716812a0c7ec1683" name="结束2">
+      <extensionElements>
+        <aws:extendEndEvent isNotifyAll="false" isNotifyInstanceOwner="true" notifyUsers=""/>
+      </extensionElements>
+    </endEvent>
+    <endEvent id="obj_c6506232bd1000013720ab001eb11790" name="结束3">
+      <extensionElements>
+        <aws:extendEndEvent isNotifyAll="false" isNotifyInstanceOwner="true" notifyUsers=""/>
+      </extensionElements>
+    </endEvent>
+    <eventBasedGateway id="obj_c650622709100001872c1b6092abf560" name=""/>
+    <intermediateCatchEvent id="obj_c6506228fc100001272ac0a061301b6a" name="1分钟">
+      <extensionElements>
+        <aws:extendTimerIntermediateCatchEvent incomingGatewayType="Parallel" branchGatewayType="Parallel"/>
+      </extensionElements>
+      <timerEventDefinition id="ICTED_obj_c6506228fc100001272ac0a061301b6a">
+        <extensionElements>
+          <aws:extend>{"timerType":0,"simpleCycle":true,"dateCycle":false,"dateTimes":false,"executionCount":"1","sc_formulaTxt":"1","sc_days":"","sc_hourss":"","sc_minutes":"1","si_formulaTxt":"","si_formula2":false,"dc_everyDay":false,"dc_ed_hours":"","dc_ed_minutes":"","dc_ed_formulaTxt":"","si_formula4":false,"dc_weekly":false,"_awsui_combobox_value_dc_wk_week":"","dc_wk_hours":"","dc_wk_minutes":"","dc_wk_formulaTxt":"","si_formula5":false,"dc_Monthly":false,"_awsui_combobox_value_dc_mh_month":"","dc_mh_week":"","dc_mh_weekDay":"","dc_mh_hours":"","dc_mh_minutes":"","dc_mh_formulaTxt":"","si_formula6":false,"dc_custom":false,"dc_ct_hourss":"","dt_formula3":false,"dt_wdr_time":"","dt_txt":"","cancelActivityck":false,"isStartTime":false,"startTime":"","isEndTime":false,"endTime":"","isRelationC":false}</aws:extend>
+        </extensionElements>
+      </timerEventDefinition>
+    </intermediateCatchEvent>
+    <intermediateCatchEvent id="obj_c650622d6450000151a21ac099a0c170" name="2分钟">
+      <extensionElements>
+        <aws:extendTimerIntermediateCatchEvent incomingGatewayType="Parallel" branchGatewayType="Parallel"/>
+      </extensionElements>
+      <timerEventDefinition id="ICTED_obj_c650622d6450000151a21ac099a0c170">
+        <extensionElements>
+          <aws:extend>{"timerType":0,"simpleCycle":true,"dateCycle":false,"dateTimes":false,"executionCount":"1","sc_formulaTxt":"1","sc_days":"","sc_hourss":"","sc_minutes":"2","si_formulaTxt":"","si_formula2":false,"dc_everyDay":false,"dc_ed_hours":"","dc_ed_minutes":"","dc_ed_formulaTxt":"","si_formula4":false,"dc_weekly":false,"_awsui_combobox_value_dc_wk_week":"","dc_wk_hours":"","dc_wk_minutes":"","dc_wk_formulaTxt":"","si_formula5":false,"dc_Monthly":false,"_awsui_combobox_value_dc_mh_month":"","dc_mh_week":"","dc_mh_weekDay":"","dc_mh_hours":"","dc_mh_minutes":"","dc_mh_formulaTxt":"","si_formula6":false,"dc_custom":false,"dc_ct_hourss":"","dt_formula3":false,"dt_wdr_time":"","dt_txt":"","cancelActivityck":false,"isStartTime":false,"startTime":"","isEndTime":false,"endTime":"","isRelationC":false}</aws:extend>
+        </extensionElements>
+      </timerEventDefinition>
+    </intermediateCatchEvent>
+    <intermediateCatchEvent id="obj_c65062312b1000017cba148812372870" name="60分钟">
+      <extensionElements>
+        <aws:extendTimerIntermediateCatchEvent incomingGatewayType="Parallel" branchGatewayType="Parallel"/>
+      </extensionElements>
+      <timerEventDefinition id="ICTED_obj_c65062312b1000017cba148812372870">
+        <extensionElements>
+          <aws:extend>{"timerType":0,"simpleCycle":true,"dateCycle":false,"dateTimes":false,"executionCount":"1","sc_formulaTxt":"1","sc_days":"","sc_hourss":"1","sc_minutes":"","si_formulaTxt":"","si_formula2":false,"dc_everyDay":false,"dc_ed_hours":"","dc_ed_minutes":"","dc_ed_formulaTxt":"","si_formula4":false,"dc_weekly":false,"_awsui_combobox_value_dc_wk_week":"","dc_wk_hours":"","dc_wk_minutes":"","dc_wk_formulaTxt":"","si_formula5":false,"dc_Monthly":false,"_awsui_combobox_value_dc_mh_month":"","dc_mh_week":"","dc_mh_weekDay":"","dc_mh_hours":"","dc_mh_minutes":"","dc_mh_formulaTxt":"","si_formula6":false,"dc_custom":false,"dc_ct_hourss":"","dt_formula3":false,"dt_wdr_time":"","dt_txt":"","cancelActivityck":false,"isStartTime":false,"startTime":"","isEndTime":false,"endTime":"","isRelationC":false}</aws:extend>
+        </extensionElements>
+      </timerEventDefinition>
+    </intermediateCatchEvent>
+  </process>
+  <bpmndi:BPMNDiagram id="bpmnDiagramModel_1" name="bpmnDiagramModel_1" documentation="backgroundColor=255,255,255;gridSize=15;width=1600;height=2500;showGrid=true;padding=60">
+    <bpmndi:BPMNPlane id="AWS_obj_a58be863dcb34cc7920a5deb62a09e66" bpmnElement="obj_a58be863dcb34cc7920a5deb62a09e66">
+      <bpmndi:BPMNShape id="AWS_obj_c650622578000001622818e01f61d790" bpmnElement="obj_c650622578000001622818e01f61d790" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;0,255,0&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;0,180,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="startEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>startEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:133,&quot;y&quot;:224,&quot;zindex&quot;:1}" orderIndex="0" defaultLine="" bpmnName="startEvent" title="开始事件" text="开始事件" name="startEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"0,100,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c650622578000001d84811d037041808","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c65062257800000165721c72bb0012e7","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c650622578000001c81316f044581361","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="133.0" y="224.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="133.0" y="224.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c6506225dec000012a551a001cbcf250" bpmnElement="obj_c6506225dec000012a551a001cbcf250">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c650622578000001622818e01f61d790&quot;,&quot;x&quot;:173,&quot;y&quot;:244}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c650622709100001872c1b6092abf560&quot;,&quot;x&quot;:229,&quot;y&quot;:244}" linkerType="broken" points="[{&quot;x&quot;:201,&quot;y&quot;:244},{&quot;x&quot;:201,&quot;y&quot;:244}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:2}" orderIndex="1" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="173.0" y="244.0"/>
+        <di:waypoint x="229.0" y="244.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c650622709100001872c1b6092abf560" bpmnElement="obj_c650622709100001872c1b6092abf560" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;157,215,237&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;137,157,192&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="bpmnGateway" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5 - w*0.5/55*32&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5 + w*0.5/55*32&quot;,&quot;x1&quot;:&quot;w*0.5 - w*0.5/55*32&quot;,&quot;x2&quot;:&quot;w*0.5 + w*0.5/55*32&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5 - h/55*32*2/3&quot;,&quot;y2&quot;:&quot;h*0.5 - h/55*32*2/3&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5 - w*0.5/55*32&quot;,&quot;x1&quot;:&quot;w*0.5 + w*0.5/55*32&quot;,&quot;x2&quot;:&quot;w*0.5 - w*0.5/55*32&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5 + h/55*32*2/3&quot;,&quot;y2&quot;:&quot;h*0.5 + h/55*32*2/3&quot;},{&quot;action&quot;:&quot;close&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5 - w*0.4/55*32&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5 + w*0.4/55*32&quot;,&quot;x1&quot;:&quot;w*0.5 - w*0.4/55*32&quot;,&quot;x2&quot;:&quot;w*0.5+w*0.4/55*32&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5 - h/55*32*2/3*0.8&quot;,&quot;y2&quot;:&quot;h*0.5 - h/55*32*2/3*0.8&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5 - w*0.4/55*32&quot;,&quot;x1&quot;:&quot;w*0.5 + w*0.4/55*32&quot;,&quot;x2&quot;:&quot;w*0.5 - w*0.4/55*32&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5 + h/55*32*2/3*0.8&quot;,&quot;y2&quot;:&quot;h*0.5 + h/55*32*2/3*0.8&quot;},{&quot;action&quot;:&quot;close&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5 - h/55*32*0.28&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+ w/55*32*0.28&quot;,&quot;y&quot;:&quot;h*0.5- h/55*32*0.08&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+ w/55*32*0.17&quot;,&quot;y&quot;:&quot;h*0.5+h/55*32*0.25&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5- w/55*32*0.17&quot;,&quot;y&quot;:&quot;h*0.5+ h/55*32*0.25&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5- w/55*32*0.28&quot;,&quot;y&quot;:&quot;h*0.5-h/55*32*0.08&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5-h/55*32*0.28&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;157,215,237&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;137,157,192&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;11,108,195&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;type&quot;:&quot;none&quot;},&quot;lineStyle&quot;:{&quot;lineWidth&quot;:0}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-35,&quot;y&quot;:50}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>eventBasedGateway</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:50,&quot;w&quot;:50,&quot;x&quot;:229,&quot;y&quot;:219,&quot;zindex&quot;:3}" orderIndex="0" defaultLine="" bpmnName="eventBasedGateway" title="事件网关" text="" name="eventBasedGateway">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"11,108,195","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c650622709300001869ce7a0141012cc","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c65062270930000146cc50b01d6a3600","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c650622709300001a6c21729ab6017e1","name":"AWSProperties","type":"string","value":""},{"category":"default","id":"obj_c650622709300001479917c0ecef1e5d","listItems":["Unspecified,Converging,Diverging,Mixed"],"name":"gatewayDirection","type":"list","value":""},{"category":"default","id":"obj_c6506227093000011d7416c066da1d29","name":"instantiate","type":"boolean","value":"false"}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="229.0" y="219.0" width="50.0" height="50.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="229.0" y="219.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c6506227b35000013faa173141201ecc" bpmnElement="obj_c6506227b35000013faa173141201ecc">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:1.5707964,&quot;id&quot;:&quot;obj_c650622709100001872c1b6092abf560&quot;,&quot;x&quot;:254,&quot;y&quot;:219}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c6506228fc100001272ac0a061301b6a&quot;,&quot;x&quot;:350,&quot;y&quot;:144}" linkerType="broken" points="[{&quot;x&quot;:254,&quot;y&quot;:144}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:4}" orderIndex="2" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="254.0" y="219.0"/>
+        <di:waypoint x="254.0" y="144.0"/>
+        <di:waypoint x="350.0" y="144.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c6506228fc100001272ac0a061301b6a" bpmnElement="obj_c6506228fc100001272ac0a061301b6a" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;170,255,43&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;146,242,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="intermediateEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w-3&quot;,&quot;x1&quot;:&quot;3&quot;,&quot;x2&quot;:&quot;w-3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;-h/6+4&quot;,&quot;y2&quot;:&quot;-h/6+4&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;3&quot;,&quot;x1&quot;:&quot;w-3&quot;,&quot;x2&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h+h/6-4&quot;,&quot;y2&quot;:&quot;h+h/6-4&quot;}],&quot;fillStyle&quot;:{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;170,255,43&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;146,242,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;47,79,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5-w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3&quot;,&quot;x1&quot;:&quot;w*0.5-w*0.3&quot;,&quot;x2&quot;:&quot;w*0.5+w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5-h*0.6*2/3&quot;,&quot;y2&quot;:&quot;h*0.5-h*0.6*2/3&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5-w*0.3&quot;,&quot;x1&quot;:&quot;w*0.5+w*0.3&quot;,&quot;x2&quot;:&quot;w*0.5-w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5+h*0.6*2/3&quot;,&quot;y2&quot;:&quot;h*0.5+h*0.6*2/3&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;color&quot;:&quot;190,250,101&quot;,&quot;type&quot;:&quot;solid&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;47,79,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.15&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/12*5)&quot;,&quot;y&quot;:&quot;h*0.5-h*0.25*Math.sin(Math.PI/12*5)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:1}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(0)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(0)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(0)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(0)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*2)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*2)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*2)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*2)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*3)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*3)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*3)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*3)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*4)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*4)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*4)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*4)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*5)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*5)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*5)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*5)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*6)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*6)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*7)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*7)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*7)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*7)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*8)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*8)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*8)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*8)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*9)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*9)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*9)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*9)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*10)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*10)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*10)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*10)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*11)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*11)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*11)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*11)&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:2}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;type&quot;:&quot;none&quot;},&quot;lineStyle&quot;:{&quot;lineWidth&quot;:0}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>timerIntermediateCatchEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:350,&quot;y&quot;:124,&quot;zindex&quot;:5}" orderIndex="0" defaultLine="" bpmnName="timerIntermediateCatchEvent" title="捕获时间事件" text="1分钟" name="timerIntermediateCatchEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"47,79,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c6506228fc300001286d12e01fc1d840","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c6506228fc3000016661f1cf77642e50","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c6506228fc3000013cf9176b1fb4c1a0","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="350.0" y="124.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="350.0" y="124.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c650622b2d2000017e671c901f601980" bpmnElement="obj_c650622b2d2000017e671c901f601980">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c6506228fc100001272ac0a061301b6a&quot;,&quot;x&quot;:390,&quot;y&quot;:144}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c650622b8b000001178d16e9fa709240&quot;,&quot;x&quot;:470,&quot;y&quot;:144}" linkerType="broken" points="[{&quot;x&quot;:430,&quot;y&quot;:144},{&quot;x&quot;:430,&quot;y&quot;:144}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:6}" orderIndex="3" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="390.0" y="144.0"/>
+        <di:waypoint x="470.0" y="144.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c650622b8b000001178d16e9fa709240" bpmnElement="obj_c650622b8b000001178d16e9fa709240" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;255,0,0&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;160,0,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="endEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:&quot;lineWidth + 2&quot;}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>endEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:470,&quot;y&quot;:124,&quot;zindex&quot;:7}" orderIndex="0" defaultLine="" bpmnName="endEvent" title="结束事件" text="结束1" name="endEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"100,0,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c650622b8b10000194651d0aee8ecd00","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c650622b8b1000018e911780156d15f3","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c650622b8b1000012a1af91e1bb01a07","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="470.0" y="124.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="470.0" y="124.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c650622cadf0000127da182016b01d7e" bpmnElement="obj_c650622cadf0000127da182016b01d7e">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c650622709100001872c1b6092abf560&quot;,&quot;x&quot;:279,&quot;y&quot;:244}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c650622d6450000151a21ac099a0c170&quot;,&quot;x&quot;:350,&quot;y&quot;:244}" linkerType="broken" points="[{&quot;x&quot;:314.5,&quot;y&quot;:244},{&quot;x&quot;:314.5,&quot;y&quot;:244}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:8}" orderIndex="4" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="279.0" y="244.0"/>
+        <di:waypoint x="350.0" y="244.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c650622d6450000151a21ac099a0c170" bpmnElement="obj_c650622d6450000151a21ac099a0c170" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;170,255,43&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;146,242,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="intermediateEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w-3&quot;,&quot;x1&quot;:&quot;3&quot;,&quot;x2&quot;:&quot;w-3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;-h/6+4&quot;,&quot;y2&quot;:&quot;-h/6+4&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;3&quot;,&quot;x1&quot;:&quot;w-3&quot;,&quot;x2&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h+h/6-4&quot;,&quot;y2&quot;:&quot;h+h/6-4&quot;}],&quot;fillStyle&quot;:{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;170,255,43&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;146,242,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;47,79,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5-w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3&quot;,&quot;x1&quot;:&quot;w*0.5-w*0.3&quot;,&quot;x2&quot;:&quot;w*0.5+w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5-h*0.6*2/3&quot;,&quot;y2&quot;:&quot;h*0.5-h*0.6*2/3&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5-w*0.3&quot;,&quot;x1&quot;:&quot;w*0.5+w*0.3&quot;,&quot;x2&quot;:&quot;w*0.5-w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5+h*0.6*2/3&quot;,&quot;y2&quot;:&quot;h*0.5+h*0.6*2/3&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;color&quot;:&quot;190,250,101&quot;,&quot;type&quot;:&quot;solid&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;47,79,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.15&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/12*5)&quot;,&quot;y&quot;:&quot;h*0.5-h*0.25*Math.sin(Math.PI/12*5)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:1}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(0)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(0)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(0)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(0)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*2)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*2)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*2)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*2)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*3)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*3)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*3)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*3)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*4)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*4)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*4)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*4)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*5)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*5)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*5)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*5)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*6)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*6)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*7)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*7)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*7)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*7)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*8)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*8)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*8)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*8)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*9)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*9)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*9)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*9)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*10)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*10)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*10)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*10)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*11)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*11)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*11)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*11)&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:2}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;type&quot;:&quot;none&quot;},&quot;lineStyle&quot;:{&quot;lineWidth&quot;:0}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>timerIntermediateCatchEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:350,&quot;y&quot;:224,&quot;zindex&quot;:9}" orderIndex="0" defaultLine="" bpmnName="timerIntermediateCatchEvent" title="捕获时间事件" text="2分钟" name="timerIntermediateCatchEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"47,79,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c650622d646000018c1aace01b8ae8d0","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c650622d64600001fe45191067d01e51","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c650622d64600001795b7ef01e91f7d0","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="350.0" y="224.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="350.0" y="224.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c650622ee0100001632ce24012c01a26" bpmnElement="obj_c650622ee0100001632ce24012c01a26">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c650622d6450000151a21ac099a0c170&quot;,&quot;x&quot;:390,&quot;y&quot;:244}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c650622f7bc00001716812a0c7ec1683&quot;,&quot;x&quot;:470,&quot;y&quot;:244}" linkerType="broken" points="[{&quot;x&quot;:430,&quot;y&quot;:244},{&quot;x&quot;:430,&quot;y&quot;:244}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:10}" orderIndex="5" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="390.0" y="244.0"/>
+        <di:waypoint x="470.0" y="244.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c650622f7bc00001716812a0c7ec1683" bpmnElement="obj_c650622f7bc00001716812a0c7ec1683" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;255,0,0&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;160,0,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="endEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:&quot;lineWidth + 2&quot;}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>endEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:470,&quot;y&quot;:224,&quot;zindex&quot;:11}" orderIndex="0" defaultLine="" bpmnName="endEvent" title="结束事件" text="结束2" name="endEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"100,0,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c650622f7bd0000183d4163c1061c0d0","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c650622f7bd00001faa011c01d001057","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c650622f7bd0000191a91b276d201334","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="470.0" y="224.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="470.0" y="224.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c65062307ef00001916541e012a05460" bpmnElement="obj_c65062307ef00001916541e012a05460">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:4.712389,&quot;id&quot;:&quot;obj_c650622709100001872c1b6092abf560&quot;,&quot;x&quot;:254,&quot;y&quot;:269}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c65062312b1000017cba148812372870&quot;,&quot;x&quot;:350,&quot;y&quot;:348}" linkerType="broken" points="[{&quot;x&quot;:254,&quot;y&quot;:348}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:12}" orderIndex="6" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="254.0" y="269.0"/>
+        <di:waypoint x="254.0" y="348.0"/>
+        <di:waypoint x="350.0" y="348.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c65062312b1000017cba148812372870" bpmnElement="obj_c65062312b1000017cba148812372870" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;170,255,43&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;146,242,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="intermediateEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w-3&quot;,&quot;x1&quot;:&quot;3&quot;,&quot;x2&quot;:&quot;w-3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;-h/6+4&quot;,&quot;y2&quot;:&quot;-h/6+4&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;3&quot;,&quot;x1&quot;:&quot;w-3&quot;,&quot;x2&quot;:&quot;3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h+h/6-4&quot;,&quot;y2&quot;:&quot;h+h/6-4&quot;}],&quot;fillStyle&quot;:{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;170,255,43&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;146,242,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;47,79,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5-w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3&quot;,&quot;x1&quot;:&quot;w*0.5-w*0.3&quot;,&quot;x2&quot;:&quot;w*0.5+w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5-h*0.6*2/3&quot;,&quot;y2&quot;:&quot;h*0.5-h*0.6*2/3&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w*0.5-w*0.3&quot;,&quot;x1&quot;:&quot;w*0.5+w*0.3&quot;,&quot;x2&quot;:&quot;w*0.5-w*0.3&quot;,&quot;y&quot;:&quot;h*0.5&quot;,&quot;y1&quot;:&quot;h*0.5+h*0.6*2/3&quot;,&quot;y2&quot;:&quot;h*0.5+h*0.6*2/3&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;color&quot;:&quot;190,250,101&quot;,&quot;type&quot;:&quot;solid&quot;},&quot;lineStyle&quot;:{&quot;lineColor&quot;:&quot;47,79,0&quot;,&quot;lineStyle&quot;:&quot;solid&quot;}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.15&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/12*5)&quot;,&quot;y&quot;:&quot;h*0.5-h*0.25*Math.sin(Math.PI/12*5)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5&quot;,&quot;y&quot;:&quot;h*0.5&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:1}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(0)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(0)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(0)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(0)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*2)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*2)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*2)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*2)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*3)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*3)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*3)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*3)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*4)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*4)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*4)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*4)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*5)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*5)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*5)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*5)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*6)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*6)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*6)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*7)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*7)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*7)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*7)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*8)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*8)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*8)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*8)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*9)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*9)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*9)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*9)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*10)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*10)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*10)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*10)&quot;},{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;w*0.5+w*0.3*Math.cos(Math.PI/6*11)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.3*Math.sin(Math.PI/6*11)&quot;},{&quot;action&quot;:&quot;line&quot;,&quot;x&quot;:&quot;w*0.5+w*0.25*Math.cos(Math.PI/6*11)&quot;,&quot;y&quot;:&quot;h*0.5+h*0.25*Math.sin(Math.PI/6*11)&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:2}},{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;fillStyle&quot;:{&quot;type&quot;:&quot;none&quot;},&quot;lineStyle&quot;:{&quot;lineWidth&quot;:0}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>timerIntermediateCatchEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:350,&quot;y&quot;:328,&quot;zindex&quot;:13}" orderIndex="0" defaultLine="" bpmnName="timerIntermediateCatchEvent" title="捕获时间事件" text="60分钟" name="timerIntermediateCatchEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"47,79,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c65062312b300001be8c46cb11121722","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c65062312b400001c28110e017873410","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c65062312b400001d3f913a033c011a0","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="350.0" y="328.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="350.0" y="328.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AWS_obj_c65062324d000001146917906b001196" bpmnElement="obj_c65062324d000001146917906b001196">
+        <di:extension>
+          <aws:linkerExtension from="{&quot;angle&quot;:3.1415927,&quot;id&quot;:&quot;obj_c65062312b1000017cba148812372870&quot;,&quot;x&quot;:390,&quot;y&quot;:348}" to="{&quot;angle&quot;:0,&quot;id&quot;:&quot;obj_c6506232bd1000013720ab001eb11790&quot;,&quot;x&quot;:470,&quot;y&quot;:348}" linkerType="broken" points="[{&quot;x&quot;:430,&quot;y&quot;:348},{&quot;x&quot;:430,&quot;y&quot;:348}]" parent="" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>linker</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:linkerExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;zindex&quot;:14}" orderIndex="7" defaultLine="" bpmnName="linker" title="" text="" name="linker">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"size":13,"textAlign":"center","underline":false}</aws:fontStyle>
+            <aws:lineStyle>{"beginArrowStyle":"none","endArrowStyle":"solidArrow","lineColor":"50,50,50","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <di:waypoint x="390.0" y="348.0"/>
+        <di:waypoint x="470.0" y="348.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="0.0" y="0.0" width="0.0" height="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AWS_obj_c6506232bd1000013720ab001eb11790" bpmnElement="obj_c6506232bd1000013720ab001eb11790" isHorizontal="false" isMarkerVisible="false">
+        <di:extension>
+          <aws:nodeExtension anchors="[{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;0&quot;},{&quot;x&quot;:&quot;w/2&quot;,&quot;y&quot;:&quot;h&quot;},{&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;x&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;}]" attribute="{&quot;container&quot;:false,&quot;editable&quot;:true,&quot;linkable&quot;:true,&quot;markerOffset&quot;:5,&quot;rotatable&quot;:false,&quot;visible&quot;:true}" category="bpmn" children="[]" fillStyle="{&quot;angle&quot;:0,&quot;beginColor&quot;:&quot;255,0,0&quot;,&quot;color&quot;:&quot;255,255,255&quot;,&quot;endColor&quot;:&quot;160,0,0&quot;,&quot;gradientType&quot;:&quot;linear&quot;,&quot;type&quot;:&quot;gradient&quot;}" groupName="endEvent" link="" parent="" path="[{&quot;actions&quot;:[{&quot;action&quot;:&quot;move&quot;,&quot;x&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;w&quot;,&quot;x1&quot;:&quot;0&quot;,&quot;x2&quot;:&quot;w&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;-h/6&quot;,&quot;y2&quot;:&quot;-h/6&quot;},{&quot;action&quot;:&quot;curve&quot;,&quot;x&quot;:&quot;0&quot;,&quot;x1&quot;:&quot;w&quot;,&quot;x2&quot;:&quot;0&quot;,&quot;y&quot;:&quot;h/2&quot;,&quot;y1&quot;:&quot;h+h/6&quot;,&quot;y2&quot;:&quot;h+h/6&quot;},{&quot;action&quot;:&quot;close&quot;}],&quot;lineStyle&quot;:{&quot;lineStyle&quot;:&quot;solid&quot;,&quot;lineWidth&quot;:&quot;lineWidth + 2&quot;}}]" resizeDir="[&quot;tl&quot;,&quot;tr&quot;,&quot;br&quot;,&quot;bl&quot;]" textBlock="{&quot;h&quot;:30,&quot;w&quot;:120,&quot;x&quot;:-40,&quot;y&quot;:40}" shapeStyle="{&quot;alpha&quot;:1}" childrenElement="[]" parentId="obj_a58be863dcb34cc7920a5deb62a09e66">
+            <aws:elementNodeType>
+              <aws:nodeType>endEvent</aws:nodeType>
+              <aws:name/>
+              <aws:group/>
+            </aws:elementNodeType>
+          </aws:nodeExtension>
+          <aws:elementSchema locked="false" group="" props="{&quot;angle&quot;:0,&quot;h&quot;:40,&quot;w&quot;:40,&quot;x&quot;:470,&quot;y&quot;:328,&quot;zindex&quot;:15}" orderIndex="0" defaultLine="" bpmnName="endEvent" title="结束事件" text="结束3" name="endEvent">
+            <aws:fontStyle>{"bold":false,"color":"50,50,50","fontFamily":"Arial","italic":false,"orientation":"vertical","size":13,"textAlign":"center","underline":false,"vAlign":"middle"}</aws:fontStyle>
+            <aws:lineStyle>{"lineColor":"100,0,0","lineStyle":"solid","lineWidth":2}</aws:lineStyle>
+            <aws:dataAttributes>[{"category":"default","id":"obj_c6506232bd200001b0da9920f9b01de4","name":"Name","type":"string","value":""},{"category":"default","id":"obj_c6506232bd2000015bd3e566171013f2","name":"documentation","type":"string","value":""},{"category":"default","id":"obj_c6506232bd200001e4701b99f9b2bb70","name":"AWSProperties","type":"string","value":""}]</aws:dataAttributes>
+          </aws:elementSchema>
+        </di:extension>
+        <dc:Bounds x="470.0" y="328.0" width="40.0" height="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="470.0" y="328.0" width="120.0" height="30.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

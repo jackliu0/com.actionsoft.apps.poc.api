@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ccModel>
+    <id>07b144b1-c9a2-40fa-9772-14df1febc442</id>
+    <createUser>admin</createUser>
+    <createTime>2014-03-21 19:17:38</createTime>
+    <updateTime>2014-03-21 19:17:38</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuiOlbV1R1XRjmGNWuD0oy7a1VugdL6pYst18qSQfmJozB28E9xixC0Gm84stm81kc</signature>
+    <uuid>07b144b1-c9a2-40fa-9772-14df1febc442</uuid>
+    <name>ExceptionTest</name>
+    <type>servicetask</type>
+    <logEnable>false</logEnable>
+    <profile>{"className":"com.actionsoft.apps.poc.api.local.process.query.ExceptionTest","diyData":[],"group":"","icon":"","name":"ExceptionTest","svtype":"javaService"}</profile>
+    <updateUser></updateUser>
+    <createDate>2014-03-21T19:17:38.058+08:00</createDate>
+    <updateDate>2014-03-21T19:17:38.058+08:00</updateDate>
+    <categoryName>未分类</categoryName>
+</ccModel>

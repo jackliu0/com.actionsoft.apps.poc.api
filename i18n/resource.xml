@@ -1,0 +1,24 @@
+<locale-config>
+	<lang>
+		<item key="info1">
+			<cn><![CDATA[这是中文简体语言]]></cn>
+			<en><![CDATA[This is the English language]]></en>
+			<big5><![CDATA[這是中文繁體語言]]></big5>
+		</item>
+		<item key="PageTitle">
+			<cn><![CDATA[这是标题]]></cn>
+			<en><![CDATA[This is Title]]></en>
+			<big5><![CDATA[這是標題]]></big5>
+		</item>
+		<item key="Var1">
+			<cn><![CDATA[这是变量1]]></cn>
+			<en><![CDATA[This is Var1]]></en>
+			<big5><![CDATA[這是變量1]]></big5>
+		</item>			
+		<item key="Var2">
+			<cn><![CDATA[这是变量2]]></cn>
+			<en><![CDATA[This is Var2]]></en>
+			<big5><![CDATA[這是變量2]]></big5>
+		</item>			
+	</lang>
+</locale-config>

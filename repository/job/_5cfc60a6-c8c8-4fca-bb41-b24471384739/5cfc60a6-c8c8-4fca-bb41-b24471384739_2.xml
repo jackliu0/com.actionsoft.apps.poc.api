@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<awsScheduleModel>
+    <id>5cfc60a6-c8c8-4fca-bb41-b24471384739</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-18 19:13:27</createTime>
+    <updateTime>2015-08-18 19:58:57</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuDwHJ5MApnwMABBznBfVs8mkYOmluSTgTDz8gZBA1dgQ/qhZXmCl238IXh9JM/uMb</signature>
+    <name>Hello Job</name>
+    <group>DEFAULT</group>
+    <desc>这是PoC App的测试Job</desc>
+    <disabled>false</disabled>
+    <system>false</system>
+    <classz>com.actionsoft.apps.poc.api.local.job.HelloJob</classz>
+    <createDate>2015-08-18T19:13:27.076+08:00</createDate>
+    <triggerRule>6::0</triggerRule>
+    <userParam>Today is @date</userParam>
+    <lastToken></lastToken>
+    <concurrent>false</concurrent>
+    <categoryName>未分类</categoryName>
+    <stateful>false</stateful>
+</awsScheduleModel>

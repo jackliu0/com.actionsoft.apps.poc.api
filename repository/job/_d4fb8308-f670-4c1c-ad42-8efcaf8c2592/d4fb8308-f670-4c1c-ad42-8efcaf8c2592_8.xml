@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<awsScheduleModel>
+    <id>d4fb8308-f670-4c1c-ad42-8efcaf8c2592</id>
+    <createUser>admin</createUser>
+    <createTime>2015-08-18 23:35:59</createTime>
+    <updateTime>2015-08-18 23:39:30</updateTime>
+    <signature>DgQSSyFmOqrf7WQa6WFesZuTOnzFe+zevZg0BYW55MuhMOtUylRD92QW2MZY8fzuvrZNRyuql8vxlEgFrS5/wQoLctkpqxI2KPXFz0cg2wYOQDYRG/Hl9e76GvifM9KE</signature>
+    <name>Connection HTTP Demo</name>
+    <group>http</group>
+    <desc>这是PoC App的HTTP Job演示。当执行时，向AWS PaaS控制台输出给定的msg信息</desc>
+    <disabled>false</disabled>
+    <system>false</system>
+    <classz></classz>
+    <createDate>2015-08-18T23:35:59.335+08:00</createDate>
+    <triggerRule>6::0</triggerRule>
+    <userParam>{"id":"815a1542-b687-4e6d-82cc-4da76d306d2c","startCondition":"","reqArgs":"{\"msg\":\"来自HTTP Job的调度请求 - @date\"}"}</userParam>
+    <lastToken></lastToken>
+    <concurrent>false</concurrent>
+    <categoryName>未分类</categoryName>
+    <stateful>false</stateful>
+</awsScheduleModel>
